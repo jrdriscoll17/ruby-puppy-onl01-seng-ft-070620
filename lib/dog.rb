@@ -1,8 +1,20 @@
 class Dog
-  @@dog_list = []
+  @@all = []
 
   def initialize(name)
     @name = name
-    @@dog_list << name
+    save
+  end
+
+  def all
+    @@all
+  end
+
+  def save
+    @@all << self
+  end
+
+  def print_all
+    @@all.each{|dog| puts dog}
   end
 end
