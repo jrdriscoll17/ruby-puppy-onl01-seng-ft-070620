@@ -6,7 +6,7 @@ class Dog
     save
   end
 
-  def all
+  def selfall
     return @@all
   end
 
