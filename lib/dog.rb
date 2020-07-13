@@ -6,15 +6,15 @@ class Dog
     save
   end
 
-  def selfall
-    return @@all
+  def self.all
+    @@all
   end
 
-  def save
+  def self.save
     @@all << self
   end
 
-  def print_all
+  def self.print_all
     @@all.each{|dog| puts dog}
   end
 end
